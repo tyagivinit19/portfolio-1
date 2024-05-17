@@ -13,7 +13,7 @@ import { SiNginx } from "react-icons/si";
 import { motion } from 'framer-motion'
 
 const iconMotion = (duration) => {
-    duration = 0; //
+    // duration = 0; //
     return {
         initial: { y: -10 },
         animate: {
@@ -61,6 +61,16 @@ const Technologies = () => {
                         <span className="text-neutral-300">React</span>
                     </div>
                 </motion.div>
+                <motion.div
+                    variants={iconMotion(3.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
+                    <div className="flex-grow flex flex-col justify-center items-center w-24">
+                        <FaNodeJs className="text-7xl text-green-500" />
+                        <span className="text-neutral-300">NodeJS</span>
+                    </div>
+                </motion.div>
                 {/* <motion.div
                     variants={iconMotion(5)}
                     initial="initial"
@@ -79,33 +89,6 @@ const Technologies = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    variants={iconMotion(4)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
-                    <div className="flex-grow flex flex-col justify-center items-center w-24">
-                        <DiRedis className="text-7xl text-red-700" />
-                        <span className="text-neutral-300">Redis</span>
-                    </div>
-                </motion.div>
-                <motion.div
-                    variants={iconMotion(3.5)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
-                    <div className="flex-grow flex flex-col justify-center items-center w-24">
-                        <FaNodeJs className="text-7xl text-green-500" />
-                        <span className="text-neutral-300">NodeJS</span>
-                    </div>
-                </motion.div>
-                {/* <motion.div
-                    variants={iconMotion(1.5)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <BiLogoPostgresql className="text-7xl text-sky-700" />
-                </motion.div> */}
-                <motion.div
                     variants={iconMotion(1.5)}
                     initial="initial"
                     animate="animate"
@@ -116,13 +99,30 @@ const Technologies = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    variants={iconMotion(4.5)}
+                    variants={iconMotion(4)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
                     <div className="flex-grow flex flex-col justify-center items-center w-24">
-                        <FaAws className="text-7xl text-amber-500" />
-                        <span className="text-neutral-300">AWS</span>
+                        <DiRedis className="text-7xl text-red-700" />
+                        <span className="text-neutral-300">Redis</span>
+                    </div>
+                </motion.div>
+                {/* <motion.div
+                    variants={iconMotion(1.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <BiLogoPostgresql className="text-7xl text-sky-700" />
+                </motion.div> */}
+                <motion.div
+                    variants={iconMotion(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
+                    <div className="flex-grow flex flex-col justify-center items-center w-24">
+                        <SiNginx className="text-7xl text-green-600" />
+                        <span className="text-neutral-300">Nginx</span>
                     </div>
                 </motion.div>
                 <motion.div
@@ -136,13 +136,13 @@ const Technologies = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    variants={iconMotion(5.5)}
+                    variants={iconMotion(4.5)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4 text-center flex flex-col justify-center items-center">
                     <div className="flex-grow flex flex-col justify-center items-center w-24">
-                        <SiNginx className="text-7xl text-green-600" />
-                        <span className="text-neutral-300">Nginx</span>
+                        <FaAws className="text-7xl text-amber-500" />
+                        <span className="text-neutral-300">AWS</span>
                     </div>
                 </motion.div>
             </motion.div>
